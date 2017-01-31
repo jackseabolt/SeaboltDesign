@@ -1,0 +1,238 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ @import "bootstrap-sprockets";
+ @import "bootstrap";
+$nav: #313131; 
+$grey: #e9e9e9;
+
+.btn_submit {
+	color: white;
+	background-color: #3d6ca1;
+	padding: 10px 20px;
+}
+body {
+ 	margin: 0px !important;
+ 	padding: 0px !important;
+	background-color: white;
+ }
+ .circle_images {
+ 	width: 250px;
+ 	padding-left: 30px;
+ 	padding-right: 30px;
+ 	padding-top: 10px;
+ 	padding-bottom: 10px;
+ }
+ .circle_image_text {
+ 	width: 80%;
+ 	margin-left: auto;
+ 	margin-right: auto;
+ }
+#contact_section {
+ 	background-color: #343747;
+ 	padding-top: 50px;
+ 	padding-bottom: 60px;
+ 	h3 {
+ 		color: white;
+ 	}
+ 	p {
+ 		color: $grey;
+ 	}
+ }
+ .dot {
+ 	font-size: 9px !important;
+ 	position: relative;
+ 	top: -3px;
+ }
+ .footer {
+ 	background-color: black;
+ 	h3 {
+ 		color: white;
+ 	}
+ 	p {
+ 		color: $grey;
+ 	}
+ }
+ .footer_contact {
+ 	margin-top: 60px;
+ 	margin-bottom: 60px;
+ 	text-align: center;
+ }
+ .footer_links {
+ 	font-size: 16px;
+ }
+ .footer_text {
+ 	color: grey !important;
+ }
+
+
+
+
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+.navbar .navbar-collapse {
+  text-align: center;
+}
+.nav_item {
+	margin-left: 23px;
+	margin-right: 23px;
+	font-size: 16px;
+}
+
+
+
+
+ .navbar {
+	padding: 10px; 
+	position: fixed;
+	z-index: 5;
+	top: 0px;
+	width: 100%;
+	box-shadow: 0px 0px 5px black;
+	.icon-bar {
+		background: white !important; 
+	}
+}
+.navbar_placeholder {
+	width: 100%;
+	height: 70px;
+	background-color: none;
+}
+nav {
+ 	border: $nav !important; 
+	border-radius: 0px !important; 
+	background-color: $nav  !important;
+	a {
+		color: white !important; 
+		background-color: $nav  !important;
+	} 
+	.collapsed {
+		border: 1px solid $nav  !important;
+	}
+	.collapsed:hover {
+		background: $nav !important;
+	}
+}
+.nav_search {
+	margin-left: 40px !important;
+}
+
+
+ #section_1 {
+ 	background-color: none;
+ 	height: 500px;
+ 	position: absolute;
+ 	top: 0px;
+ 	width: 100%;
+ 	z-index: 3;
+ 	padding: 0px !important;
+ 	text-align: center;
+ }
+ #section_1_cover {
+ 	background-color: #1f2140;
+ 	opacity: 0.5;
+ 	height: 500px;
+ 	position: absolute;
+ 	top: 0px;
+ 	width: 100%;
+ }
+ #section_1_background {
+ 	width: 100%;
+ 	height: 500px;
+ 	background-size: 100%;
+ 	background-image: url(http://i.giphy.com/7aADy6NmlIdXi.gif);
+ 	position: relative;
+ }
+ #section_2 {
+ 	background-color: white;
+ 	height: 500px;
+ 	position: absolute;
+ 	width: 100%;
+ }
+ .test {
+ 	background-color: white;
+ 	margin-top: 60px;
+ 	margin-bottom: 60px;
+ }
+  .test2 {
+ 	background-color: none;
+ 	text-align: center;
+ 	margin-bottom: 30px;
+ 	h3 {
+ 		color: #323752 !important;
+ 	}
+ }
+ #title {
+ 	color: white;
+ 	font-size: 110px;
+ 	font-family: 'Raleway', sans-serif;
+ 	margin-top: 170px;
+ 	font-weight: normal;
+ 	font-family: impact;
+ }
+ #title_sub_container {
+ 	margin-top: 0px !important;
+ 	padding-top: 0px !important;
+ 	position: relative;
+ 	top: -30px;
+ }
+ #title_sub {
+ 	color: white;
+ 	font-size: 24px;
+ 	margin-top: 0px;
+ }
+ @media screen and (max-width:1000px){
+ 	#section_2 {
+	 	top: 400px;
+ 	}
+ 	#title {
+	 	margin-top: 140px;
+	}
+ }
+ @media screen and (max-width: 800px) {
+ 	 .circle_images {
+	 	width: 240px;
+	 }
+ 	
+	 .circle_image_text {
+	 	margin-bottom: 40px !important;
+	 }
+ 	.dot {
+	 	font-size: 7px !important;
+	 	position: relative;
+	 	top: -3px;
+	}
+ 	#section_2 {
+	 	top: 300px;
+ 	}
+ 	#section_1_background {
+	 	background-position: center;
+	 	background-size: cover;
+	 	height: 300px;
+	}
+	#title {
+	 	margin-top: 130px;
+	 	font-size: 50px;
+	}
+	#title_sub_container {
+ 		top: -20px;
+ 	}
+	#title_sub {
+	 	font-size: 16px;
+	}
+ }

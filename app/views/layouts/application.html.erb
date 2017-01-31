@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  	<head>
+	    <title>Jack Seabolt</title>
+	    <%= csrf_meta_tags %>
+
+	    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+	    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+	    <script src="https://use.fontawesome.com/53102a906f.js"></script>
+	   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	   <meta name="viewport" content="width=device-width, initial-scale=1">
+ 	</head>
+  	<body>
+  		<div id="section_1_background"></div>
+		<div id="section_1_cover"></div>
+		<div id="section_1">
+				<nav class="navbar navbar-default">
+				  <div class="container-fluid">
+				    <!-- Brand and toggle get grouped for better mobile display -->
+				    <div class="navbar-header">
+					      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					        <span class="sr-only">Toggle navigation</span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					      </button>
+				    </div>
+
+				    <!-- Collect the nav links, forms, and other content for toggling -->
+				    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				      <ul class="nav navbar-nav">
+				        <li class="nav_item" id="about"><a href="">About Me</a></li>
+				        <li class="nav_item"><a id="portfolio" href="">Portfolio</a></li>
+				        <li class="nav_item"><a id="blog" href="">Blog</a></li>
+				        <li class="nav_item"><a id="contact" href="">Contact</a></li> 
+				      </ul>
+				    </div><!-- /.navbar-collapse -->
+				  </div><!-- /.container-fluid -->
+				</nav>
+			<p id="title">SEABOLT DESIGN</p>
+			<div id="title_sub_container">
+				<p id="title_sub">Design &nbsp; <i class="fa fa-circle dot" aria-hidden="true"></i> &nbsp; Development &nbsp; <i class="fa fa-circle dot" aria-hidden="true"></i> &nbsp; Marketing</p>
+			</div>
+		</div>
+		<div id="section_2" class="container">	
+			<div class="row">
+				<div class="col-sm-6 col-sm-push-3 col-xs-10 col-xs-push-1 col-md-10 col-md-push-1 test">
+					<div class='col-sm-12 col-md-4 test2'>
+						<%= image_tag "mobile.png", class: 'circle_images' %> 
+						<h3>Web Products</h3>
+						<p class="circle_image_text">First impressions matter. Let's build a web platform for your business that will attract new customers and keep them coming back.</p>
+					</div>
+					<div class='col-sm-12 col-md-4 test2'>
+						<%= image_tag "webdesign.png", class: 'circle_images' %>
+						<h3>Mobile Design</h3>
+						<p class="circle_image_text">A serious modern business needs to be able to reach customers on all platforms. Having a mobile-adjsuted website is essential.</p>
+					</div>
+					<div class='col-sm-12 col-md-4 test2'>
+						<%= image_tag "market.png", class: 'circle_images' %>
+						<h3>Marketing</h3>
+						<p class="circle_image_text">You work hard for your business. Make your business work hard for you. Design a marketing plan to attract new customers. </p>
+					</div>
+				</div>	
+			</div>
+			<div class="row" id="contact_section">
+				<div class="col-xs-10 col-xs-push-1 col-sm-8 col-sm-push-2">
+					<h3>Let's get something started</h3>
+					<p>I assist businesses of all sizes with their web development needs. If you have a project in mind and would like to talk about it, fill out this form to get the process started. </p>
+					<br />
+					<input type="text" placeholder="Your Name (required)" class="form-control">
+					<br />
+					<input type="text" placeholder="Your Email (required)" class="form-control">
+					<br />
+					<textarea rows="5" placeholder="Explain the project you have in mind" class="form-control"></textarea>
+					<br />
+					<button class="btn btn_submit">Submit</button>
+				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-xs-10 col-xs-push-1 col-sm-8 col-sm-push-2 footer_contact">
+					<p class="footer_links">Web Products &nbsp; | &nbsp; Mobile Design &nbsp; | &nbsp; Marketing</p>
+					<br />
+					<p class="footer_text">&copy; 2017 by Seabolt Design. All rights reserved.</p>
+					
+				</div>	
+			</div>
+		</div>
+
+  		<script type="text/javascript">
+  			
+
+$(document).on('turbolinks:load', function(){
+
+	$('#about').hover(
+	    function(){
+	        $(this).animate({'color': '#a0fffc !important'},400);
+	    },
+	    function(){
+	        $(this).animate({'color': 'white  !important'},400);
+	    }
+	);
+
+});	
+  		</script>
+  	</body>
+</html>
