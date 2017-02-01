@@ -3,4 +3,12 @@ Rails.application.routes.draw do
 
 root 'pages#home'
 
+PagesController.action_methods.each do |action|
+    get "/#{action}", to: "pages##{action}", as: "#{action}_page"
+end
+
+get "/pages/web", to: "pages#web"
+get "/pages/marketing", to: "pages#marketing"
+get "/pages/mobile", to: "pages#mobile"
+
 end

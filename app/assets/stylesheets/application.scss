@@ -39,6 +39,7 @@ body {
  	width: 80%;
  	margin-left: auto;
  	margin-right: auto;
+ 	color: black; 
  }
 #contact_section {
  	background-color: #343747;
@@ -72,6 +73,7 @@ body {
  }
  .footer_links {
  	font-size: 16px;
+ 	color: white !important; 
  }
  .footer_text {
  	color: grey !important;
@@ -164,7 +166,7 @@ nav {
  	position: absolute;
  	width: 100%;
  }
- .test {
+ .section_white {
  	background-color: white;
  	margin-top: 60px;
  	margin-bottom: 60px;

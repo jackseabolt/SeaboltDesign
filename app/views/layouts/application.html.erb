@@ -29,10 +29,11 @@
 				    <!-- Collect the nav links, forms, and other content for toggling -->
 				    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				      <ul class="nav navbar-nav">
-				        <li class="nav_item" id="about"><a href="">About Me</a></li>
-				        <li class="nav_item"><a id="portfolio" href="">Portfolio</a></li>
+				      	<li class="nav_item" id="about"><%= link_to "Home", root_path %></li>
+				        <li class="nav_item" id="about"><%= link_to "About", about_page_path %></li>
+				        <li class="nav_item"><%= link_to "Portfolio", portfolio_page_path %></li>
 				        <li class="nav_item"><a id="blog" href="">Blog</a></li>
-				        <li class="nav_item"><a id="contact" href="">Contact</a></li> 
+				        <li class="nav_item"><%= link_to "Contact", contact_page_path %></li> 
 				      </ul>
 				    </div><!-- /.navbar-collapse -->
 				  </div><!-- /.container-fluid -->
@@ -64,7 +65,7 @@
 			</div>
 			<div class="row footer">
 				<div class="col-xs-10 col-xs-push-1 col-sm-8 col-sm-push-2 footer_contact">
-					<p class="footer_links">Web Products &nbsp; | &nbsp; Mobile Design &nbsp; | &nbsp; Marketing</p>
+					<p class="footer_links"><%= link_to "Home", root_path, class: 'footer_links' %> &nbsp; | &nbsp;<%= link_to "Web", web_page_path, class: 'footer_links'%> &nbsp; | &nbsp; <%= link_to "Mobile", mobile_page_path, class: 'footer_links' %> &nbsp; | &nbsp; <%= link_to "Marketing", marketing_page_path, class: 'footer_links' %> </p>
 					<br />
 					<p class="footer_text">&copy; 2017 by Seabolt Design. All rights reserved.</p>
 					
