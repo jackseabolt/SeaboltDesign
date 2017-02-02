@@ -78,7 +78,15 @@ body {
  .footer_text {
  	color: grey !important;
  }
-
+.body_image {
+	width: 400px;
+	margin-top: 80px;
+	margin-bottom: 40px;
+	border: 1px solid black;
+	margin-left: auto !important;
+	margin-right: auto !important;
+	display: block;
+}
 
 
 
@@ -133,7 +141,9 @@ nav {
 .nav_search {
 	margin-left: 40px !important;
 }
-
+p {
+	font-size: 16px;
+}
 
  #section_1 {
  	background-color: none;
@@ -160,9 +170,9 @@ nav {
  	background-image: url(http://i.giphy.com/7aADy6NmlIdXi.gif);
  	position: relative;
  }
+
  #section_2 {
  	background-color: white;
- 	height: 500px;
  	position: absolute;
  	width: 100%;
  }
@@ -170,14 +180,14 @@ nav {
  	background-color: white;
  	margin-top: 60px;
  	margin-bottom: 60px;
+ 	h3 {
+ 		color: #323752 !important;
+ 	}
  }
   .test2 {
  	background-color: none;
  	text-align: center;
  	margin-bottom: 30px;
- 	h3 {
- 		color: #323752 !important;
- 	}
  }
  #title {
  	color: white;
@@ -198,15 +208,22 @@ nav {
  	font-size: 24px;
  	margin-top: 0px;
  }
- @media screen and (max-width:1000px){
+ @media screen and (max-width:991px){
  	#section_2 {
 	 	top: 400px;
  	}
+ 	.section_white_main {
+ 		margin-top: 100px;
+ 	
+ }
  	#title {
 	 	margin-top: 140px;
 	}
  }
  @media screen and (max-width: 800px) {
+ 	.body_image {
+		width: 70%;
+	}
  	 .circle_images {
 	 	width: 180px;
 	 	padding-left: 0px;
@@ -240,3 +257,9 @@ nav {
 	 	font-size: 16px;
 	}
  }
+ @media screen and (max-width: 600px) {
+
+	.body_image {
+		width: 90%;
+	}
+ }	
