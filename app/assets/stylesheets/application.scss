@@ -265,7 +265,10 @@ p {
 	}
  }
  @media screen and (max-width: 600px) {
-
+		#title {
+	 	margin-top: 130px;
+	 	font-size: 40px;
+	}
 	.body_image {
 		width: 90%;
 	}
