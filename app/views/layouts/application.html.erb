@@ -52,13 +52,22 @@
 					<h3>Let's get something started</h3>
 					<p>I assist businesses of all sizes with their web development needs. If you have a project in mind and would like to talk about it, fill out this form to get the process started. </p>
 					<br />
-					<input type="text" placeholder="Your Name (required)" class="form-control">
-					<br />
-					<input type="text" placeholder="Your Email (required)" class="form-control">
-					<br />
-					<textarea rows="5" placeholder="Explain the project you have in mind" class="form-control"></textarea>
-					<br />
-					<button class="btn btn_submit">Submit</button>
+					<%= form_for define_contact_form, remote: true do |t| %>
+						<%= t.text_field :name, placeholder: "Your Name (required)", class: 'form-control' %>
+						<br />
+						<%= t.text_field :email, placeholder: "Your Email (required)", class: 'form-control' %>
+						<br />
+						<%= t.text_area :message, placeholder: "Explain the project you have in mind", rows: 5, class: 'form-control' %>
+						<br />
+						<%= t.submit 'Send', class: 'btn btn_submit' %>
+						<!-- <input type="text" placeholder="Your Name (required)" class="form-control">
+						<br />
+						<input type="text" placeholder="Your Email (required)" class="form-control">
+						<br />
+						<textarea rows="5" placeholder="Explain the project you have in mind" class="form-control"></textarea>
+						<br />
+						<button class="btn btn_submit">Submit</button> -->
+					<% end %> 
 				</div>
 			</div>
 			<div class="row footer">

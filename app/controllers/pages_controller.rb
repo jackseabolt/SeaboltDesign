@@ -1,7 +1,8 @@
 class PagesController < ApplicationController
+	helper_method :define_contact_form
 
 	def home
-		# @contact_form = ContactForm.new
+	
 	end
 
 	def about
@@ -27,5 +28,11 @@ class PagesController < ApplicationController
 	def mobile
 
 	end 
+
+	private 
+
+		def define_contact_form
+			ContactForm.new
+		end
 
 end

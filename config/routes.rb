@@ -12,4 +12,6 @@ get "/pages/web", to: "pages#web"
 get "/pages/marketing", to: "pages#marketing"
 get "/pages/mobile", to: "pages#mobile"
 
+resources :contact_forms
+
 end
