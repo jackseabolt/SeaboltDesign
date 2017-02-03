@@ -19,7 +19,10 @@
 
 $nav: #313131; 
 $grey: #e9e9e9;
-
+a:hover {
+	background-color: none !important;
+	text-decoration: none !important; 
+}
 .btn_submit {
 	color: white;
 	background-color: #3d6ca1;
@@ -145,7 +148,14 @@ nav {
 	margin-left: 40px !important;
 }
 p {
-	font-size: 16px;
+	font-size: 14px;
+}
+.portfolio_row {
+	text-align: center;
+}
+.portfolio_newsletter {
+	height: 400px;
+	margin: 20px 20px;
 }
 
  #section_1 {
@@ -205,7 +215,7 @@ p {
  	color: white;
  	font-size: 110px;
  	font-family: 'Anton', sans-serif;
- 	margin-top: 170px;
+ 	margin-top: 230px;
  	font-weight: bold;
  }
  .holder {
@@ -215,7 +225,7 @@ p {
  	margin-top: 0px !important;
  	padding-top: 0px !important;
  	position: relative;
- 	top: -30px;
+ 	top: 45px;
  }
  #title_sub {
  	color: white;
@@ -230,7 +240,7 @@ p {
  		margin-top: 40px;
 	}
  	#title {
-	 	margin-top: 140px;
+	 	margin-top: 190px;
 	}
  }
  @media screen and (max-width: 800px) {
@@ -263,11 +273,11 @@ p {
  		margin-top: 40px;
 	}
 	#title {
-	 	margin-top: 130px;
+	 	margin-top: 150px;
 	 	font-size: 50px;
 	}
 	#title_sub_container {
- 		top: -20px;
+ 		top: 20px;
  	}
 	#title_sub {
 	 	font-size: 16px;
