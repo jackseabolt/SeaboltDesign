@@ -145,12 +145,15 @@ nav {
 .nav_search {
 	margin-left: 40px !important;
 }
-.portfolio_row {
-	text-align: center;
+.portfolio {
+	width: 100%;
+	margin-bottom: 30px;
 }
-.portfolio_newsletter {
-	height: 400px;
-	padding: 20px 20px;
+.portfolio_caption {
+	color: #4f4f4f;
+}
+.portfolio_title {
+	margin-bottom: 60px;
 }
  #section_1 {
  	background-color: none;
@@ -254,6 +257,9 @@ nav {
 	 	font-size: 7px !important;
 	 	position: relative;
 	 	top: -3px;
+	}
+	.portfolio_title {
+		margin-bottom: 30px;
 	}
  	#section_2 {
 	 	top: 300px;

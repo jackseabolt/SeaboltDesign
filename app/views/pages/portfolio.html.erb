@@ -2,24 +2,60 @@
 	<h3>Portfolio</h3>
 	<hr>
 	<p>I design digital marketing products, websites and web applications for business of all sizes. Please take a moment to look at some of my previous work.</p>
+	<br /><br />
+	<h4 class="portfolio_caption">Newsletters</h4>
+	<p>Digital newsletters are a great way to keep in touch with existing clients so they keep coming back. Announce new products, events and promotional offers with the touch of a button. </p>
 	<br />
-	<h4>Newsletters</h4>
-	<div class="portfolio_row">
-	<a href="http://www.seaboltmarketing.com/Portfolio_AlmaBeckNewsletter_October2015.html">
-		<%= image_tag "newsletter.jpg", class: 'portfolio_newsletter' %> 
-	</a>
-	<a href="http://seaboltmarketing.com/Portfolio_LakinSpearsNewsletter.html">
-		<%= image_tag "newsletter2.jpg", class: 'portfolio_newsletter' %> 
-	</a>	
-	<a href="http://www.seaboltmarketing.com/Portfolio_Workshop.html">
-		<%= image_tag "newsletter3.jpg", class: 'portfolio_newsletter' %> 
-	</a>
+	<div class="row">
+		<a href="http://www.seaboltmarketing.com/Portfolio_AlmaBeckNewsletter_October2015.html">
+			<div class='col-xs-8 col-xs-push-2 col-sm-push-0 col-sm-4'>
+				<%= image_tag "newsletter1.jpg", class: 'portfolio' %> 
+			</div>
+		</a>
+		<a href="http://seaboltmarketing.com/Portfolio_LakinSpearsNewsletter.html">
+			<div class='col-xs-8 col-xs-push-2 col-sm-push-0 col-sm-4'>
+				<%= image_tag "newsletter2.jpg", class: 'portfolio' %> 
+			</div>
+		</a>	
+		<a href="http://www.seaboltmarketing.com/Portfolio_Workshop.html">
+			<div class='col-xs-8 col-xs-push-2 col-sm-push-0 col-sm-4'>
+				<%= image_tag "newsletter3.jpg", class: 'portfolio' %> 
+			</div>
+		</a>
+		<div class="col-xs-10 col-xs-push-1">
+			<hr />
+			<br />
+		</div>
 	</div>
-	<br />
-	<h4>Websites</h4>
-	<div class="portfolio_row">
-		<%= image_tag "newsletter.jpg", class: 'portfolio_newsletter' %> 
-		<%= image_tag "newsletter2.jpg", class: 'portfolio_newsletter' %> 
-		<%= image_tag "newsletter3.jpg", class: 'portfolio_newsletter' %> 
+
+	<div class="row">
+		<div class="col-md-5 col-md-push-7 col-sm-push-6 col-sm-6 col-xs-12">
+		<h4 class="portfolio_caption">Musi</h4>
+		<p class="portfolio_caption">Musi is a web application that helps local musicians meet and create new music. Similar to a dating application, Musi allows users to fill out a profile that will allow them to be "matched" with potentially compatible musicians in their area.
+		<br /><br />
+		</div>
+		<a href="http://musiapp.herokuapp.com">
+			<div class="col-md-6 col-xs-12 col-md-pull-5 col-sm-pull-6 col-sm-6 ">
+				<%= image_tag "Musi.png", class: 'portfolio' %> 
+			</div>
+		</a>
+		<div class="col-xs-10 col-xs-push-1">
+			<hr />
+			<br />
+		</div>
+		<div class="col-md-5 col-md-push-7 col-sm-push-6 col-sm-6 col-xs-12">
+		<h4 class="portfolio_caption">AlbumReview</h4>
+		<p class="portfolio_caption">Do you have a favorite album no one has ever heard of? Are you looking for new music? AlbumReview is a web application that allows you to rate the music you listen to and share your ratings with your friends on social media.
+		<br /><br />
+		</div>
+		<a href="http://albumreview.herokuapp.com">
+			<div class="col-md-6 col-xs-12 col-md-pull-5 col-sm-pull-6 col-sm-6 ">
+				<%= image_tag "AlbumReview.png", class: 'portfolio' %> 
+			</div>
+		</a>
+		<div class="col-xs-10 col-xs-push-1">
+			<hr />
+			<br />
+		</div>
 	</div>
 </div>
