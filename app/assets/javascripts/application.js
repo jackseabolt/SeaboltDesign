@@ -30,19 +30,17 @@
 
 // controlls link hover effects
 
-
-
 $(document).on('turbolinks:load', function(){
 
-	$('#about').hover(
-	    function(){
-	        $(this).animate({'color': '#a0fffc'},400);
-	    },
-	    function(){
-	        $(this).animate({'color': 'white'},400);
-	    }
-	);
+	function rise(){	
+		var ypos = window.pageYOffset;
+		var title = $('#title');
+		if (ypos > 100px) {
+			title.animate({top: "0px"}, 2000);
+		}
+	}
 
+	window.addEventListener('scroll', rise);
 });	
 
 
