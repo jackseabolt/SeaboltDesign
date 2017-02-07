@@ -1,5 +1,5 @@
 class ContactFormsController < ApplicationController
-	def new
+	  def new
       @contact_form = ContactForm.new
     end
 

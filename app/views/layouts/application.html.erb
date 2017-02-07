@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   	<head>
-	    <title>Jack Seabolt</title>
+	    <title>Seabolt Design</title>
 	    <%= csrf_meta_tags %>
 	    <link href="https://fonts.googleapis.com/css?family=Schoolbell" rel="stylesheet">
 	    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -9,6 +9,7 @@
 	    <script src="https://use.fontawesome.com/53102a906f.js"></script>
 	    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
 	   <meta name="viewport" content="width=device-width, initial-scale=1">
+	   <%= favicon_link_tag %>
  	</head>
   	<body>
   		<div id="section_1_background"></div>
@@ -73,29 +74,12 @@
 			</div>
 			<div class="row footer">
 				<div class="col-xs-10 col-xs-push-1 col-sm-8 col-sm-push-2 footer_contact">
-					<p class="footer_links"><%= link_to "Home", root_path, class: 'footer_links' %> &nbsp; | &nbsp;<%= link_to "Web", web_page_path, class: 'footer_links'%> &nbsp; | &nbsp; <%= link_to "Mobile", mobile_page_path, class: 'footer_links' %> &nbsp; | &nbsp; <%= link_to "Marketing", marketing_page_path, class: 'footer_links' %> </p>
+					<p class="footer_link_block"><%= link_to "Home", root_path, class: 'footer_links' %> &nbsp; | &nbsp;<%= link_to "Web", web_page_path, class: 'footer_links'%> &nbsp; | &nbsp; <%= link_to "Mobile", mobile_page_path, class: 'footer_links' %> &nbsp; | &nbsp; <%= link_to "Marketing", marketing_page_path, class: 'footer_links' %> </p>
 					<br />
 					<p class="footer_text">&copy; 2017 by Seabolt Design. All rights reserved.</p>
 					
 				</div>	
 			</div>
 		</div>
-
-  		<script type="text/javascript">
-  			
-
-$(document).on('turbolinks:load', function(){
-
-	$('#about').hover(
-	    function(){
-	        $(this).animate({'color': '#a0fffc !important'},400);
-	    },
-	    function(){
-	        $(this).animate({'color': 'white  !important'},400);
-	    }
-	);
-
-});	
-  		</script>
   	</body>
 </html>

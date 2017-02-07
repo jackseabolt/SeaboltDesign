@@ -30,7 +30,7 @@ body {
  	padding: 0px !important;
 	background-color: white;
  }
- .body_image {
+.body_image {
 	width: 400px;
 	margin-top: 80px;
 	margin-bottom: 40px;
@@ -39,20 +39,17 @@ body {
 	margin-right: auto !important;
 	display: block;
 }
-
- .circle_images {
- 	width: 250px;
- 	padding-left: 30px;
- 	padding-right: 30px;
+.circle_images {
+ 	width: 190px;
  	padding-top: 10px;
  	padding-bottom: 10px;
- }
- .circle_image_text {
+}
+.circle_image_text {
  	width: 80%;
  	margin-left: auto;
  	margin-right: auto;
  	color: black; 
- }
+}
 #contact_section {
  	background-color: #343747;
  	padding-top: 60px;
@@ -63,13 +60,13 @@ body {
  	p {
  		color: $grey;
  	}
- }
- .dot {
+}
+.dot {
  	font-size: 9px !important;
  	position: relative;
  	top: -3px;
- }
- .footer {
+}
+.footer {
  	background-color: black;
  	h3 {
  		color: white;
@@ -77,23 +74,32 @@ body {
  	p {
  		color: $grey;
  	}
- }
- .footer_contact {
+}
+.footer_contact {
  	margin-top: 60px;
  	margin-bottom: 60px;
  	text-align: center;
- }
- .footer_links {
+}
+.footer_link_block {
+ 	line-height: 24px !important; 
+}
+.footer_links {
  	font-size: 16px;
  	color: white !important;
  	line-height: 24px !important; 
- }
- .footer_text {
+}
+.footer_links:hover {
+ 	text-decoration: none;
+ 	color: #00ddda !important; 
+}
+.footer_text {
  	color: grey !important;
- }
-
-
-
+}
+.home_containers {
+ 	background-color: none;
+ 	text-align: center;
+ 	margin-bottom: 30px;
+}
 .navbar .navbar-nav {
   display: inline-block;
   float: none;
@@ -107,11 +113,7 @@ body {
 	margin-right: 23px;
 	font-size: 16px;
 }
-
-
-
-
- .navbar {
+.navbar {
 	padding: 10px; 
 	position: fixed;
 	z-index: 5;
@@ -135,6 +137,9 @@ nav {
 		color: white !important; 
 		background-color: $nav  !important;
 	} 
+	a:hover {
+		color: #00ddda !important; 
+	}
 	.collapsed {
 		border: 1px solid $nav  !important;
 	}
@@ -149,13 +154,16 @@ nav {
 	width: 100%;
 	margin-bottom: 30px;
 }
+.portfolio:hover {
+	opacity: 0.9;
+}
 .portfolio_caption {
 	color: #4f4f4f;
 }
 .portfolio_title {
 	margin-bottom: 60px;
 }
- #section_1 {
+#section_1 {
  	background-color: none;
  	height: 500px;
  	position: absolute;
@@ -164,29 +172,28 @@ nav {
  	z-index: 3;
  	padding: 0px !important;
  	text-align: center;
- }
- #section_1_cover {
+}
+#section_1_cover {
  	background-color: #1f2140;
  	opacity: 0.5;
  	height: 500px;
  	position: absolute;
  	top: 0px;
  	width: 100%;
- }
- #section_1_background {
+}
+#section_1_background {
  	width: 100%;
  	height: 500px;
  	background-size: 100%;
  	background-image: url(http://i.giphy.com/7aADy6NmlIdXi.gif);
  	position: relative;
- }
-
- #section_2 {
+}
+#section_2 {
  	background-color: white;
  	position: absolute;
  	width: 100%;
- }
- .section_white {
+}
+.section_white {
  	background-color: white;
  	margin-top: 0px;
  	a:hover {
@@ -195,8 +202,8 @@ nav {
  	h3 {
  		color: #323752 !important;
  	}
- }
- .section_white_main {
+}
+.section_white_main {
  		margin-top: 70px; 
  		background:white;
  		margin-bottom: 50px;
@@ -206,25 +213,20 @@ nav {
  		background: white;
  		margin-bottom: 50px;
 	}
-  .test2 {
- 	background-color: none;
- 	text-align: center;
- 	margin-bottom: 30px;
- }
- #title {
+#title {
  	color: white;
  	font-size: 110px;
  	font-family: 'Anton', sans-serif;
  	margin-top: 230px;
  	font-weight: bold;
- }
- #title_sub_container {
+}
+#title_sub_container {
  	margin-top: 0px !important;
  	padding-top: 0px !important;
  	position: relative;
  	top: 45px;
- }
- #title_sub {
+}
+#title_sub {
  	color: white;
  	font-size: 24px;
  	margin-top: 0px;
@@ -284,17 +286,22 @@ nav {
 	}
  }
  @media screen and (max-width: 460px) {	
-	#title {
-	 	margin-top: 160px;
-	 	font-size: 40px;
-	}
-	#title_sub_container {
- 		top: 10px;
- 	}
 	.body_image {
 		width: 90%;
+	}
+	.circle_images {
+	 	width: 170px;
+	 	padding-top: 10px;
+	 	padding-bottom: 10px;
 	}
 	.section_white_page {
  		margin-top: 35px;
 	}
+	#title {
+	 	margin-top: 160px;
+	 	font-size: 50px;
+	}
+	#title_sub_container {
+ 		top: 12px;
+ 	}
  }	
