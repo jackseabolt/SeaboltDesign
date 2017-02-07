@@ -30,17 +30,33 @@
 
 // controlls link hover effects
 
+
+
+$(document).on('turbolinks:load', function(){
+	$('#title').hover(
+	    function(){
+	        $('#title').animate({'color': '#404a87'},400);
+	    },
+	    function(){
+	        $('#title').animate({'color': '#393939'},400);
+	    }
+	);
+});	
+	
+
+
+
 $(document).on('turbolinks:load', function(){
 
 	function rise(){	
 		var ypos = window.pageYOffset;
 		var title = $('#title');
-		if (ypos > 100px) {
-			title.animate({top: "0px"}, 2000);
+		if (ypos > 10) {
+			title.animate({'color': 'red'}, 2000);
 		}
 	}
-
 	window.addEventListener('scroll', rise);
 });	
+
 
 
