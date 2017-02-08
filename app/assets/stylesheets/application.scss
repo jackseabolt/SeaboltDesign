@@ -189,8 +189,12 @@ nav {
  	width: 100%;
  	height: 500px;
  	background-size: 100%;
- 	background-image: url(http://i.giphy.com/7aADy6NmlIdXi.gif);
+ 		background-image: url(http://i.giphy.com/7aADy6NmlIdXi.gif);
  	position: relative;
+}
+.placeholder {
+	background-image: url(http://i.giphy.com/oEIqwLlogE7yE.gif);
+	color: blue;
 }
 #section_2 {
  	background-color: white;
