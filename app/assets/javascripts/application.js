@@ -32,7 +32,14 @@
 	
 	window.addEventListener('scroll', parallex); 
 
-// controlls link hover effects
+// controlls gif and video
+
+	function fallback(video) {
+		var img = video.querySelector('img');
+		if (img){
+			video.parentNode.replaceChild(img, video);
+		}
+	}
 
 
 
