@@ -306,11 +306,18 @@ nav {
 	}
  }
  @media screen and (max-width: 520px) {	
-	 #section_1_background {
+	 /*#section_1_background {
 		 	width: 200%;
 		 	left: -48%;
 		 	overflow: none;
+		}*/
+	#section_1_background {
+		 	overflow: none;
 		}
+	#section_1_video {
+		width: 200%;
+		left: -48%;
+	}
 }
  @media screen and (max-width: 460px) {	
 	.body_image {
