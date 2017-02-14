@@ -288,7 +288,7 @@ nav {
 		margin-bottom: 30px;
 	}
  	#section_2 {
-	 	top: 300px;
+	 	top: 295px;
  	}
  	#section_1_background {
 	 	background-position: center;
@@ -320,9 +320,7 @@ nav {
 		 	background-image: url(https://i.imgflip.com/1jkpke.gif);
 		}
 	#section_1_video {
-		width: 200%;
-		right: 48%;
-		position: relative;
+		display:none;
 	}
 }
  @media screen and (max-width: 460px) {	
@@ -334,9 +332,6 @@ nav {
 	 	width: 170px;
 	 	padding-top: 10px;
 	 	padding-bottom: 10px;
-	}
-	#section_1_video {
-		display:none;
 	}
 	#section_2 {
 	 	top: 298px;
