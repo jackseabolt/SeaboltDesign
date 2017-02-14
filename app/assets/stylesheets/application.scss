@@ -294,6 +294,7 @@ nav {
 	 	background-position: center;
 	 	background-size: cover;
 	 	height: 300px;
+	 	overflow: hidden;
 	}
 	.section_white_page {
  		margin-top: 45px;
@@ -309,16 +310,10 @@ nav {
 	 	font-size: 14px;
 	}
  }
- @media screen and (max-width: 520px) {	
-	 /*#section_1_background {
-		 	width: 200%;
-		 	left: -48%;
-		 	overflow: none;
-		}*/
-	#section_1_background {
-		 	overflow: hidden;
-		 	background-image: url(https://i.imgflip.com/1jkpke.gif);
-		}
+ @media screen and (max-width: 720px) {	
+	 #section_1_background {
+	 	background-image: url(https://i.imgflip.com/1jkpke.gif);
+	}
 	#section_1_video {
 		display:none;
 	}
