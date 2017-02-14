@@ -294,9 +294,13 @@ nav {
 	 	background-size: cover;
 	 	height: 300px;
 	 	overflow: hidden;
+	 	background-image: url(https://i.imgflip.com/1jkpke.gif);
 	}
 	.section_white_page {
  		margin-top: 45px;
+	}
+	#section_1_video {
+		display:none;
 	}
 	#title {
 	 	margin-top: 160px;
@@ -309,14 +313,6 @@ nav {
 	 	font-size: 14px;
 	}
  }
- @media screen and (max-width: 700px) {	
-	 #section_1_background {
-	 	background-image: url(https://i.imgflip.com/1jkpke.gif);
-	}
-	#section_1_video {
-		display:none;
-	}
-}
  @media screen and (max-width: 460px) {	
 	.body_image {
 		width: 100%;
