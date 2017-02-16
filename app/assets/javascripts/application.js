@@ -11,7 +11,6 @@
 // about supported directives.
 //
 //= require jquery
-//= require jquery.turbolinks
 //= require jquery_ujs
 //= require bootstrap-sprockets
 //= require turbolinks
@@ -32,16 +31,34 @@
 	
 	window.addEventListener('scroll', parallex); 
 
-// controlls gif and video
+// controls JQuery for links
 
-	function fallback(video) {
-		var img = video.querySelector('img');
-		if (img){
-			video.parentNode.replaceChild(img, video);
-		}
-	}
+$(document).on('turbolinks:load', function() {
+
+	$('a').hover(function(){
+			$(this).animate({'color':'#00ddda !important'},400);
+		},
+		function(){
+			$(this).animate({'color':'white !important'},400);
+	});
+	$('.footer_links').hover(function(){
+			$(this).animate({'color':'#00ddda !important'},400);
+		},
+		function(){
+			$(this).animate({'color':'white !important'},400);
+	});
+})
 
 
 
+	// $(document).on('turbolinks:load', function(){
+	// 	$('.nav_item').hover(function(){
+	// 		$(this).animate({'color':'#00ddda'},400);
+	// 		}, 
+	// 		function(){
+	// 			$(this.animate({'color': 'white'}, 400);
+	// 		}
+	// 	);
+	// });
 
 

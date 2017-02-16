@@ -9,6 +9,7 @@
 	    <script src="https://use.fontawesome.com/53102a906f.js"></script>
 	    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
 	   <meta name="viewport" content="width=device-width, initial-scale=1">
+	   <script type="text/javascript" src="http://code.jquery.com/color/jquery.color-2.1.2.js"></script>
 	   <%= favicon_link_tag %>
  	</head>
   	<body>
@@ -35,10 +36,10 @@
 				    <!-- Collect the nav links, forms, and other content for toggling -->
 				    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				      <ul class="nav navbar-nav">
-				      	<li class="nav_item" id="about"><%= link_to "Home", root_path %></li>
-				        <li class="nav_item" id="about"><%= link_to "About", about_page_path %></li>
-				        <li class="nav_item"><%= link_to "Portfolio", portfolio_page_path %></li>
-				        <li class="nav_item"><%= link_to "Contact", contact_page_path %></li> 
+				      	<li class="nav_item nav_link"><%= link_to "Home", root_path, style: 'color: white !important' %></li>
+				        <li class="nav_item"><%= link_to "About", about_page_path, style: 'color: white !important' %></li>
+				        <li class="nav_item"><%= link_to "Portfolio", portfolio_page_path, style: 'color: white !important' %></li>
+				        <li class="nav_item"><%= link_to "Contact", contact_page_path, style: 'color: white !important' %></li> 
 				      </ul>
 				    </div><!-- /.navbar-collapse -->
 				  </div><!-- /.container-fluid -->
@@ -79,7 +80,7 @@
 			</div>
 			<div class="row footer">
 				<div class="col-xs-10 col-xs-push-1 col-sm-8 col-sm-push-2 footer_contact">
-					<p class="footer_link_block"><%= link_to "Home", root_path, class: 'footer_links' %> &nbsp; | &nbsp;<%= link_to "Web", web_page_path, class: 'footer_links'%> &nbsp; | &nbsp; <%= link_to "Mobile", mobile_page_path, class: 'footer_links' %> &nbsp; | &nbsp; <%= link_to "Marketing", marketing_page_path, class: 'footer_links' %> </p>
+					<p class="footer_link_block"><%= link_to "Home", root_path, class: 'footer_links', style: 'color: white !important' %> &nbsp; | &nbsp;<%= link_to "Web", web_page_path, class: 'footer_links', style: 'color: white !important' %> &nbsp; | &nbsp; <%= link_to "Mobile", mobile_page_path, class: 'footer_links', style: 'color: white !important'  %> &nbsp; | &nbsp; <%= link_to "Marketing", marketing_page_path, class: 'footer_links', style: 'color: white !important'  %> </p>
 					<br />
 					<p class="footer_text">&copy; 2017 by Seabolt Design. All rights reserved.</p>
 					

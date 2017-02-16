@@ -89,12 +89,10 @@ body {
 }
 .footer_links {
  	font-size: 16px;
- 	color: white !important;
  	line-height: 24px !important; 
 }
 .footer_links:hover {
  	text-decoration: none;
- 	color: #00ddda !important; 
 }
 .footer_text {
  	color: grey !important;
@@ -116,6 +114,7 @@ body {
 	margin-left: 23px;
 	margin-right: 23px;
 	font-size: 16px;
+	color: white !important; 
 }
 .navbar {
 	padding: 10px; 
@@ -138,12 +137,8 @@ nav {
 	border-radius: 0px !important; 
 	background-color: $nav  !important;
 	a {
-		color: white !important; 
 		background-color: $nav  !important;
 	} 
-	a:hover {
-		color: #00ddda !important; 
-	}
 	.collapsed {
 		border: 1px solid $nav  !important;
 	}

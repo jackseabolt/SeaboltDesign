@@ -1,6 +1,5 @@
 source 'https://rubygems.org'
 gem 'bootstrap-sass', '~> 3.3.6'
-gem 'jquery-turbolinks'
 gem 'simple_form'
 gem 'mail_form'
 gem 'google-webfonts'
