@@ -84,6 +84,12 @@ body {
  	margin-bottom: 60px;
  	text-align: center;
 }
+.footer_mini_contact {
+	margin-top: 60px;
+ 	margin-bottom: 60px;
+ 	text-align: center;
+ 	display: none;
+}
 .footer_link_block {
  	line-height: 24px !important; 
 }
@@ -353,4 +359,10 @@ nav {
 	#title_sub_container {
  		top: 12px;
  	}
+ 	.footer_contact {
+	 	display: none;
+	}
+	.footer_mini_contact {
+		display: block;
+	}
  }	
