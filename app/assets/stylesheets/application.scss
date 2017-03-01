@@ -190,7 +190,7 @@ nav {
 #section_1_image {
 	width: 100%;
 }
-#section_1_video {
+/*#section_1_video {
 	width: 100%;
 	display:none;
 }
@@ -200,7 +200,7 @@ nav {
 	background-image: url(http://i.giphy.com/7aADy6NmlIdXi.gif);
 	color: red;
 	background-color: orange;
-}
+}*/
 #section_2 {
  	background-color: white;
  	position: absolute;
@@ -311,9 +311,9 @@ nav {
 	.section_white_page {
  		margin-top: 45px;
 	}
-	#section_1_video {
+	/*#section_1_video {
 		display:none;
-	}
+	}*/
 	#title {
 	 	margin-top: 160px;
 	 	font-size: 60px;
@@ -336,6 +336,9 @@ nav {
 	 	width: 170px;
 	 	padding-top: 10px;
 	 	padding-bottom: 10px;
+	}
+	#section_1_image {
+		width: 130%;
 	}
 	#section_2 {
 	 	top: 298px;
