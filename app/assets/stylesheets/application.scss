@@ -269,6 +269,9 @@ nav {
 	}
  }
  @media screen and (max-width:991px){
+ 	.home_containers {
+	 	margin-bottom: 55px;
+	}
  	#section_2 {
 	 	top: 400px;
  	}
@@ -308,6 +311,9 @@ nav {
 	 	font-size: 7px !important;
 	 	position: relative;
 	 	top: -3px;
+	}
+	.home_containers {
+	 	margin-bottom: 65px;
 	}
 	.portfolio_title {
 		margin-bottom: 30px;
@@ -350,9 +356,6 @@ nav {
 	 	width: 160px;
 	 	padding-top: 10px;
 	 	padding-bottom: 10px;
-	}
-	.home_containers {
-	 	margin-bottom: 65px;
 	}
 	#section_1_image {
 		width: 145%;
