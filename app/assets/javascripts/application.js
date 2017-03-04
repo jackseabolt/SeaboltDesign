@@ -36,13 +36,13 @@
 $(document).on('turbolinks:load', function() {
 
 	$('a').hover(function(){
-			$(this).animate({'color':'#00ddda !important'},400);
+			$(this).animate({'color':'#9ed2ff !important'},400);
 		},
 		function(){
 			$(this).animate({'color':'white !important'},400);
 	});
 	$('.footer_links').hover(function(){
-			$(this).animate({'color':'#00ddda !important'},400);
+			$(this).animate({'color':'#9ed2ff !important'},400);
 		},
 		function(){
 			$(this).animate({'color':'white !important'},400);
