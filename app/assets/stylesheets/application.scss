@@ -270,11 +270,11 @@ nav {
 	}
 	#title {
 	 	color: white;
-	 	font-size: 105px;
+	 	font-size: 100px;
 	 	font-family: 'Anton', sans-serif;
 	 	margin-top: 240px;
 	 	font-weight: bold;
-	 	position: relative; 
+	 	position: relative;
 	}
 	#title_sub_container {
 	 	margin-top: 0px !important;
@@ -321,6 +321,7 @@ nav {
 	 	font-size: 19px;
 	 	margin-top: 0px;
 	 	position: relative;
+	 	top: 2px;
 	 }
  }
  @media screen and (max-width: 800px) {
