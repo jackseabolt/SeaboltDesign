@@ -259,7 +259,6 @@ nav {
  	font-size: 22px;
  	margin-top: 0px;
  	position: relative;
- 	top: -8px; 
  }
 
 
@@ -285,9 +284,8 @@ nav {
 	#title_sub {
 	 	color: white;
 	 	font-size: 22px;
-	 	margin-top: 0px;
+	 	margin-top: 2px;
 	 	position: relative;
-	 	top: 2px; 
 	 }
  }
  @media screen and (max-width:991px){
@@ -321,7 +319,7 @@ nav {
 	 	font-size: 19px;
 	 	margin-top: 0px;
 	 	position: relative;
-	 	top: 2px;
+	 	margin-top: 2px;
 	 }
  }
  @media screen and (max-width: 800px) {
