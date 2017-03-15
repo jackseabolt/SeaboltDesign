@@ -242,7 +242,7 @@ nav {
 	}
 #title {
  	color: white;
- 	font-size: 105px;
+ 	font-size: 90px;
  	font-family: 'Anton', sans-serif;
  	margin-top: 240px;
  	font-weight: bold;
@@ -258,7 +258,8 @@ nav {
  	color: white;
  	font-size: 22px;
  	margin-top: 0px;
- 	position: relative; 
+ 	position: relative;
+ 	top: -6px; 
  }
 
 
@@ -267,6 +268,27 @@ nav {
 		margin-left: 35px;
 		margin-right: 35px;
 	}
+	#title {
+	 	color: white;
+	 	font-size: 105px;
+	 	font-family: 'Anton', sans-serif;
+	 	margin-top: 240px;
+	 	font-weight: bold;
+	 	position: relative; 
+	}
+	#title_sub_container {
+	 	margin-top: 0px !important;
+	 	padding-top: 0px !important;
+	 	position: relative;
+	 	top: 45px;
+	}
+	#title_sub {
+	 	color: white;
+	 	font-size: 22px;
+	 	margin-top: 0px;
+	 	position: relative;
+	 	top: 2px; 
+	 }
  }
  @media screen and (max-width:991px){
  	.home_containers {
