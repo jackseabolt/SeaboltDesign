@@ -2,8 +2,8 @@ Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
   config.action_mailer.raise_delivery_errors = true
 
-  config.action_mailer.delivery_method = :smtp
-  config.action_mailer.smtp_settings = {
+  ActionMailer::Base.delivery_method = :smtp
+  ActionMailer::Base.smtp_settings = {
     :address => ENV['MAILGUN_SMTP_SERVER'],
     :port => ENV['MAILGUN_SMTP_PORT'],
     :user_name => ENV['MAILGUN_SMTP_LOGIN'],
