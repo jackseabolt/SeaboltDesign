@@ -53,15 +53,20 @@ Rails.application.configure do
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
 
 
+
+  
+
+  #everything below here is old
+
   config.action_mailer.raise_delivery_errors = true
 
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
-    :address => "smtp.gmail.com",
+    :address => "smtp.mailgun.org",
     :port => "587",
-    :domain => "mydomain.net",
-    :user_name => "seaboltmarketing@gmail.com",
-    :password => "7Testing",
+    :domain => "https://seaboltdesing.com",
+    :user_name => "postmaster@seaboltdesign.com",
+    :password => "356ab025e8596898530ed932d936f811",
     :authentication => "plain",
     :enable_starttls_auto => true
   } 
