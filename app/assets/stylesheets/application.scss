@@ -44,9 +44,15 @@ body {
 	display: block;
 }
 .circle_images {
- 	width: 170px;
- 	padding-top: 10px;
- 	padding-bottom: 10px;
+ 	max-width: 100%;
+ 	-moz-transition: all 0.3s;
+ 	-webkit-transition: all 0.3;
+ 	transition: all 0.3s;
+}
+.circle_images:hover {
+	-moz-transform: scale(1.1); 
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
 }
 .circle_image_text {
  	width: 80%;
@@ -115,6 +121,16 @@ body {
  	background-color: none;
  	text-align: center;
  	margin-bottom: 30px;
+ 	h3 {
+ 		padding-top: 10px !important;
+ 	}
+}
+.image_container {
+	width: 170px;
+ 	margin-left: auto;
+ 	margin-right: auto;
+ 	overflow: hidden;
+ 	border-radius: 50%;
 }
 .navbar .navbar-nav {
   display: inline-block;
@@ -231,12 +247,12 @@ nav {
  	}
 }
 .section_white_main {
- 		margin-top: 70px; 
+ 		margin-top: 80px; 
  		background:white;
  		margin-bottom: 50px;
 	}
 .section_white_page {
- 		margin-top: 50px;
+ 		margin-top: 60px;
  		background: white;
  		margin-bottom: 50px;
 	}
@@ -296,7 +312,7 @@ nav {
 	 	top: 400px;
  	}
 	.section_white_page {
- 		margin-top: 45px;
+ 		margin-top: 50px;
 	}
 	.section_white_main {
  		margin-top: 70px; 
@@ -378,10 +394,8 @@ nav {
 		width: 100%;
 		margin-top: 60px;
 	}
-	.circle_images {
-	 	width: 160px;
-	 	padding-top: 10px;
-	 	padding-bottom: 10px;
+	.image_container {
+		width: 160px;
 	}
 	#section_1_image {
 		width: 145%;
@@ -390,7 +404,7 @@ nav {
 	 	top: 298px;
  	}
 	.section_white_page {
- 		margin-top: 35px;
+ 		margin-top: 45px;
 	}
 	#title {
 	 	margin-top: 160px;
