@@ -48,6 +48,7 @@ body {
  	-moz-transition: all 0.3s;
  	-webkit-transition: all 0.3;
  	transition: all 0.3s;
+ 	z-index: 99;
 }
 .circle_images:hover {
 	-moz-transform: scale(1.1); 
@@ -131,6 +132,7 @@ body {
  	margin-right: auto;
  	overflow: hidden;
  	border-radius: 50%;
+ 	z-index: 99;
 }
 .navbar .navbar-nav {
   display: inline-block;
@@ -235,6 +237,7 @@ nav {
  	background-color: white;
  	position: absolute;
  	width: 100%;
+ 	z-index: 90;
 }
 .section_white {
  	background-color: white;
@@ -346,6 +349,11 @@ nav {
 	 	padding-left: 0px;
  		padding-right: 0px;
 	}
+	.circle_images:hover {
+		-moz-transform: none; 
+		-webkit-transform: none;
+		transform: none;
+	}
 	.circle_image_text {
 	 	margin-bottom: 40px !important;
 	}
@@ -369,6 +377,9 @@ nav {
 	 	height: 300px;
 	 	overflow: hidden;
 	 	background-image: url(https://i.imgflip.com/1jkpke.gif);
+	}
+	#section_1_cover {
+	 	height: 400px;
 	}
 	.section_white_page {
  		margin-top: 45px;
@@ -396,6 +407,9 @@ nav {
 	}
 	.image_container {
 		width: 160px;
+	}
+	#section_1_cover {
+	 	height: 400px;
 	}
 	#section_1_image {
 		width: 145%;
