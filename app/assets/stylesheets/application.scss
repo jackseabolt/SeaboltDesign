@@ -157,9 +157,13 @@ body {
 	top: 0px;
 	width: 100%;
 	box-shadow: 0px 0px 5px black;
+	z-index: 100;
 	.icon-bar {
 		background: white !important; 
 	}
+}
+.navbar_default {
+	  z-index: 999 !important;
 }
 .navbar_placeholder {
 	width: 100%;
@@ -169,9 +173,10 @@ body {
 nav {
  	border: $nav !important; 
 	border-radius: 0px !important; 
-	background-color: $nav  !important;
+	background: rgba(0, 0, 0, 1) !important;
+	z-index: 999 !important;
 	a {
-		background-color: $nav  !important;
+		background-color: none;
 	} 
 	.collapsed {
 		border: 1px solid $nav  !important;
@@ -239,7 +244,6 @@ nav {
  	background-color: white;
  	position: absolute;
  	width: 100%;
- 	z-index: 90;
 }
 .section_white {
  	background-color: white;
