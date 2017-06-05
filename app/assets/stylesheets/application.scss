@@ -173,10 +173,10 @@ body {
 nav {
  	border: $nav !important; 
 	border-radius: 0px !important; 
-	background-color: $nav  !important;
+	background: rgba(0, 0, 0, 1) !important;
 	z-index: 999 !important;
 	a {
-		background-color: $nav  !important;
+		background-color: none;
 	} 
 	.collapsed {
 		border: 1px solid $nav  !important;
